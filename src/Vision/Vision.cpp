@@ -5,7 +5,7 @@ namespace Phoenix{
     Vision* Vision::s_Instance = nullptr;
     Vision::Vision(){
         s_Instance = this;
-        m_Sock = CreateRef<UDPSocket>(10006);
+        m_Sock = CreateRef<UDPSocket>(10020);
         Connect();
     }
     Vision::~Vision(){

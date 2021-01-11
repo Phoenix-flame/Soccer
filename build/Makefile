@@ -204,6 +204,33 @@ src/Network/PracticalSocket.cpp.s:
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.s
 .PHONY : src/Network/PracticalSocket.cpp.s
 
+src/Vision/Vision.o: src/Vision/Vision.cpp.o
+
+.PHONY : src/Vision/Vision.o
+
+# target to build an object file
+src/Vision/Vision.cpp.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o
+.PHONY : src/Vision/Vision.cpp.o
+
+src/Vision/Vision.i: src/Vision/Vision.cpp.i
+
+.PHONY : src/Vision/Vision.i
+
+# target to preprocess a source file
+src/Vision/Vision.cpp.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.i
+.PHONY : src/Vision/Vision.cpp.i
+
+src/Vision/Vision.s: src/Vision/Vision.cpp.s
+
+.PHONY : src/Vision/Vision.s
+
+# target to generate assembly for a file
+src/Vision/Vision.cpp.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.s
+.PHONY : src/Vision/Vision.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/Network/PracticalSocket.o"
 	@echo "... src/Network/PracticalSocket.i"
 	@echo "... src/Network/PracticalSocket.s"
+	@echo "... src/Vision/Vision.o"
+	@echo "... src/Vision/Vision.i"
+	@echo "... src/Vision/Vision.s"
 .PHONY : help
 
 
