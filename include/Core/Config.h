@@ -1,6 +1,5 @@
 #pragma once
 #include <lua5.1/lua.hpp>
-#include <Core/Log.h>
 #include <string>
 namespace Phoenix{
 

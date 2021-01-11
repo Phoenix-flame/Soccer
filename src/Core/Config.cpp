@@ -1,5 +1,5 @@
 #include <Core/Config.h>
-
+#include <Core/Log.h>
 namespace Phoenix{
     VisionConfig Config::s_VisionConfig;
     Config::Config(){
