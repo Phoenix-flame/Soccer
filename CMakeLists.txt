@@ -37,14 +37,16 @@ target_include_directories(
     ${PROJECT_SOURCE_DIR}/include
 )
 file(COPY scripts DESTINATION .)
+file(COPY assets DESTINATION .)
 find_package(Lua51 REQUIRED)
 include_directories(/usr/local/include ${LUA_INCLUDE_DIR})
 find_package(spdlog REQUIRED)
 
-
+add_subdirectory(phoenix)
 target_link_libraries(${APP_TARGET} ${SPDLOG_LIBRARIES})
 target_link_libraries(${APP_TARGET} ${LUA_LIBRARIES})
 target_link_libraries(${APP_TARGET} ${Protobuf_LIBRARIES})
+target_link_libraries(${APP_TARGET} phoenix)
 target_compile_features(${APP_TARGET}
     PRIVATE
     cxx_std_17

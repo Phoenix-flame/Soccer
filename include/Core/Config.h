@@ -2,7 +2,7 @@
 #include <lua5.1/lua.hpp>
 #include <string>
 #include <vector>
-namespace Phoenix{
+namespace ssl{
 
 
     template<typename T>

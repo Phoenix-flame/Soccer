@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __LOG__ 
+#define __LOG__
 #include <spdlog/spdlog.h>
 #include <spdlog/fmt/ostr.h>
 #include <memory>
@@ -31,3 +32,6 @@ namespace Phoenix {
 #define PHX_WARN(...)          ::Phoenix::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define PHX_ERROR(...)         ::Phoenix::Log::GetClientLogger()->error(__VA_ARGS__)
 #define PHX_CRITICAL(...)      ::Phoenix::Log::GetClientLogger()->critical(__VA_ARGS__)
+
+
+#endif

@@ -1,8 +1,8 @@
 #include <Vision/Vision.h>
-#include <Core/Log.h>
+#include <Phoenix/core/log.h>
 #include <Core/Config.h>
 #include <math.h>
-namespace Phoenix{
+namespace ssl{
     Vision* Vision::s_Instance = nullptr;
     Vision::Vision(){
         s_Instance = this;

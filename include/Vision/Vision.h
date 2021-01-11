@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Network/PracticalSocket.h>
-#include <Core/Base.h>
+#include <Phoenix/core/base.h>
 #include <../build/messages_robocup_ssl_detection.pb.h>
 #include <../build/messages_robocup_ssl_wrapper.pb.h>
 
@@ -14,7 +14,7 @@
 #define MAX_ROBOT_SUBSITUTE 60
 #define MAX_ROBOTS 60
 
-namespace Phoenix{
+namespace ssl{
     class Vision{
     public:
         Vision();

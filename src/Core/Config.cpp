@@ -1,6 +1,6 @@
 #include <Core/Config.h>
-#include <Core/Log.h>
-namespace Phoenix{
+#include <Phoenix/core/log.h>
+namespace ssl{
     VisionConfig Config::s_VisionConfig;
     Config::Config(){
         lua_State *L;

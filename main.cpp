@@ -1,15 +1,12 @@
 #include <iostream>
-#include <Core/Log.h>
-#include <Vision/Vision.h>
-#include <Core/Config.h>
-int main(){
+#include <Phoenix/core/log.h>
+#include <Core/MainApplication.h>
+
+int main(int argc, char** argv){
     Phoenix::Log::Init();
-    PHX_CORE_INFO("Let's Rock");
-    Phoenix::Config config;
-    Phoenix::Vision vision;
-    while(true){
-        vision.ReceivePacket();
-    }
+    PHX_INFO("Phoenix flame");
+    ssl::MyClient app;
+    app.Run();
 
     return 0;
 }
