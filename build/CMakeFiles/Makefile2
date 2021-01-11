@@ -74,12 +74,12 @@ clean: CMakeFiles/Soccer.dir/clean
 CMakeFiles/Soccer.dir/all:
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/depend
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target Soccer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Soccer"
 .PHONY : CMakeFiles/Soccer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Soccer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alireza/Programming/C++/Soccer/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alireza/Programming/C++/Soccer/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Soccer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alireza/Programming/C++/Soccer/build/CMakeFiles 0
 .PHONY : CMakeFiles/Soccer.dir/rule

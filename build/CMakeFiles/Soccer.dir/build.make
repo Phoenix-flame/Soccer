@@ -70,9 +70,22 @@ CMakeFiles/Soccer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/main.cpp -o CMakeFiles/Soccer.dir/main.cpp.s
 
+CMakeFiles/Soccer.dir/src/Core/Config.cpp.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/src/Core/Config.cpp.o: ../src/Core/Config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Config.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Core/Config.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Core/Config.cpp
+
+CMakeFiles/Soccer.dir/src/Core/Config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/src/Core/Config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/src/Core/Config.cpp > CMakeFiles/Soccer.dir/src/Core/Config.cpp.i
+
+CMakeFiles/Soccer.dir/src/Core/Config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/src/Core/Config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/src/Core/Config.cpp -o CMakeFiles/Soccer.dir/src/Core/Config.cpp.s
+
 CMakeFiles/Soccer.dir/src/Core/Log.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Core/Log.cpp.o: ../src/Core/Log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Log.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Core/Log.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Core/Log.cpp
 
 CMakeFiles/Soccer.dir/src/Core/Log.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/Soccer.dir/src/Core/Log.cpp.s: cmake_force
 
 CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o: ../src/Network/PracticalSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Network/PracticalSocket.cpp
 
 CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.s: cmake_force
 
 CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o: ../src/Vision/Vision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Vision/Vision.cpp
 
 CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.i: cmake_force
@@ -112,6 +125,7 @@ CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.s: cmake_force
 # Object files for target Soccer
 Soccer_OBJECTS = \
 "CMakeFiles/Soccer.dir/main.cpp.o" \
+"CMakeFiles/Soccer.dir/src/Core/Config.cpp.o" \
 "CMakeFiles/Soccer.dir/src/Core/Log.cpp.o" \
 "CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o" \
 "CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
@@ -120,6 +134,7 @@ Soccer_OBJECTS = \
 Soccer_EXTERNAL_OBJECTS =
 
 Soccer: CMakeFiles/Soccer.dir/main.cpp.o
+Soccer: CMakeFiles/Soccer.dir/src/Core/Config.cpp.o
 Soccer: CMakeFiles/Soccer.dir/src/Core/Log.cpp.o
 Soccer: CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o
 Soccer: CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o
@@ -127,7 +142,7 @@ Soccer: CMakeFiles/Soccer.dir/build.make
 Soccer: /usr/lib/x86_64-linux-gnu/liblua5.1.so
 Soccer: /usr/lib/x86_64-linux-gnu/libm.so
 Soccer: CMakeFiles/Soccer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Soccer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Soccer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Soccer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

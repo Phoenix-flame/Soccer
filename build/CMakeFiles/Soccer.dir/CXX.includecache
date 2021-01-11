@@ -12,6 +12,14 @@ iostream
 memory
 -
 
+../include/Core/Config.h
+lua5.1/lua.hpp
+-
+Core/Log.h
+-
+string
+-
+
 ../include/Core/Log.h
 spdlog/spdlog.h
 -
@@ -39,10 +47,18 @@ Core/Log.h
 -
 Vision/Vision.h
 -
+Core/Config.h
+-
+
+/home/alireza/Programming/C++/Soccer/src/Core/Config.cpp
+Core/Config.h
+-
 
 /home/alireza/Programming/C++/Soccer/src/Vision/Vision.cpp
 Vision/Vision.h
 -
 Core/Log.h
+-
+Core/Config.h
 -
 

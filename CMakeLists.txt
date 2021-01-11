@@ -24,7 +24,7 @@ target_include_directories(
     PUBLIC 
     ${PROJECT_SOURCE_DIR}/include
 )
-
+file(COPY scripts DESTINATION .)
 find_package(Lua51 REQUIRED)
 include_directories(/usr/local/include ${LUA_INCLUDE_DIR})
 find_package(spdlog REQUIRED)

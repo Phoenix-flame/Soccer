@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Core/Config.o: src/Core/Config.cpp.o
+
+.PHONY : src/Core/Config.o
+
+# target to build an object file
+src/Core/Config.cpp.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Core/Config.cpp.o
+.PHONY : src/Core/Config.cpp.o
+
+src/Core/Config.i: src/Core/Config.cpp.i
+
+.PHONY : src/Core/Config.i
+
+# target to preprocess a source file
+src/Core/Config.cpp.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Core/Config.cpp.i
+.PHONY : src/Core/Config.cpp.i
+
+src/Core/Config.s: src/Core/Config.cpp.s
+
+.PHONY : src/Core/Config.s
+
+# target to generate assembly for a file
+src/Core/Config.cpp.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Core/Config.cpp.s
+.PHONY : src/Core/Config.cpp.s
+
 src/Core/Log.o: src/Core/Log.cpp.o
 
 .PHONY : src/Core/Log.o
@@ -243,6 +270,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Core/Config.o"
+	@echo "... src/Core/Config.i"
+	@echo "... src/Core/Config.s"
 	@echo "... src/Core/Log.o"
 	@echo "... src/Core/Log.i"
 	@echo "... src/Core/Log.s"

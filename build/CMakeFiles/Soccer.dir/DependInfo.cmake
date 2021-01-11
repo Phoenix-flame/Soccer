@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alireza/Programming/C++/Soccer/main.cpp" "/home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir/main.cpp.o"
+  "/home/alireza/Programming/C++/Soccer/src/Core/Config.cpp" "/home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir/src/Core/Config.cpp.o"
   "/home/alireza/Programming/C++/Soccer/src/Core/Log.cpp" "/home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir/src/Core/Log.cpp.o"
   "/home/alireza/Programming/C++/Soccer/src/Network/PracticalSocket.cpp" "/home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o"
   "/home/alireza/Programming/C++/Soccer/src/Vision/Vision.cpp" "/home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
