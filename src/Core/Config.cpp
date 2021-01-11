@@ -23,7 +23,10 @@ namespace Phoenix{
 
         s_VisionConfig.ip = getValue<std::string>(L, "vision_ip");
         s_VisionConfig.port = getValue<int>(L, "vision_port");
-
+        for(unsigned int i = 0 ; i < getValue<int>(L, "vision_num_cam"); i++){
+            s_VisionConfig.enabled_cam.push_back(getValue<bool>(L, "vision_camera" + std::to_string(i + 1)));
+        }
+        
         lua_close(L);
 
     }

@@ -52,7 +52,7 @@ namespace Phoenix{
     int Vision::ExtractYellowTeam(){
         int ans = 0;
         for (int i = 0; i < CAM_COUNT; i++){
-            if ( true ){
+            if ( Config::s_VisionConfig.enabled_cam[i] ){
                 for ( int j = 0 ; j < min(MAX_ROBOTS, frame[i].robots_yellow_size()) ; j ++ ){
                     robot[ans] = frame[i].robots_yellow(j);
                     ans++;

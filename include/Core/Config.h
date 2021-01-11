@@ -1,6 +1,7 @@
 #pragma once
 #include <lua5.1/lua.hpp>
 #include <string>
+#include <vector>
 namespace Phoenix{
 
 
@@ -29,6 +30,7 @@ namespace Phoenix{
     struct VisionConfig{
         std::string ip;
         int port; 
+        std::vector<bool> enabled_cam;
     };
     class Config{
     public:
