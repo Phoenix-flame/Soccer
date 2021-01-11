@@ -37,7 +37,8 @@ namespace Phoenix{
         SSL_WrapperPacket packet;
 		SSL_DetectionFrame frame[CAM_COUNT];
 		SSL_DetectionBall d_ball[MAX_BALLS*CAM_COUNT];
-		SSL_DetectionRobot robot[MAX_ROBOTS*CAM_COUNT];
+        std::map<int, SSL_DetectionRobot> m_YellowRobots;
+        std::map<int, SSL_DetectionRobot> m_BlueRobots;
         bool packet_recieved[CAM_COUNT];
         static Vision* s_Instance;
     };

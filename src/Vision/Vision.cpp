@@ -3,7 +3,7 @@
 #include <Core/Config.h>
 #include <math.h>
 #include <Game/Game.h>
-
+#include <map>
 namespace Phoenix{
     Vision* Vision::s_Instance = nullptr;
     Vision::Vision(){
@@ -46,18 +46,15 @@ namespace Phoenix{
 
     void Vision::ProcessRobots(){
         int yellow_robots = ExtractYellowTeam();
-        for (unsigned int i = 0 ; i <yellow_robots ; i++){
-            if (robot[i].robot_id() == Config::s_GameConfig.ourGK) {
-                Game::ourGK->VisionUpdate(Eigen::Vector2f(robot[i].x(), robot[i].y()), robot[i].orientation());
-            }
-        }
+        int blue_robots = ExtractBlueTeam();
+        Game::ourGK->VisionUpdate(Eigen::Vector2f(m_YellowRobots[3].x(), m_YellowRobots[3].y()), m_YellowRobots[3].orientation());
     }
     int Vision::ExtractYellowTeam(){
         int ans = 0;
         for (int i = 0; i < CAM_COUNT; i++){
-            if ( Config::s_VisionConfig.enabled_cam[i] ){
-                for ( int j = 0 ; j < min(MAX_ROBOTS, frame[i].robots_yellow_size()) ; j ++ ){
-                    robot[ans] = frame[i].robots_yellow(j);
+            if (Config::s_VisionConfig.enabled_cam[i] ){
+                for (int j = 0 ; j < min(MAX_ROBOTS, frame[i].robots_yellow_size()); j ++){
+                    m_YellowRobots[frame[i].robots_yellow(j).robot_id()] = frame[i].robots_yellow(j);
                     ans++;
                 }
             }
@@ -65,6 +62,16 @@ namespace Phoenix{
         return ans;
     }
     int Vision::ExtractBlueTeam(){
-        return 0;
+        SSL_DetectionRobot robot[MAX_ROBOTS*CAM_COUNT];
+        int ans = 0;
+        for (int i = 0; i < CAM_COUNT; i++){
+            if (Config::s_VisionConfig.enabled_cam[i] ){
+                for (int j = 0 ; j < min(MAX_ROBOTS, frame[i].robots_blue_size()); j ++){
+                    m_BlueRobots[frame[i].robots_blue(j).robot_id()] = frame[i].robots_blue(j);
+                    ans++;
+                }
+            }
+        }
+        return ans;
     }
 }
