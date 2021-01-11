@@ -6,3 +6,10 @@ vision_camera1 = true;
 vision_camera2 = true;
 vision_camera3 = true;
 vision_camera4 = true;
+
+-- [Game Config]
+game_numOurRobots = 1;
+game_numOppRobots = 1;
+game_ourGK = 3;
+game_oppGK = 3;
+game_ourcolor = false; -- [yellow false, blue true]

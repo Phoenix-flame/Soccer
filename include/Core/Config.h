@@ -2,7 +2,7 @@
 #include <lua5.1/lua.hpp>
 #include <string>
 #include <vector>
-namespace ssl{
+namespace Phoenix{
 
 
     template<typename T>
@@ -32,11 +32,21 @@ namespace ssl{
         int port; 
         std::vector<bool> enabled_cam;
     };
+    struct GameConfig{
+        int numOurRobots;
+        int numOppRobots;
+        int ourGK;
+        int oppGK;
+        bool ourColor;
+    };
+
+
     class Config{
     public:
         Config();
         ~Config() = default;
 
         static VisionConfig s_VisionConfig;
+        static GameConfig s_GameConfig;
     };
 }

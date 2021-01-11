@@ -1,8 +1,10 @@
 #include <Vision/Vision.h>
-#include <Phoenix/core/log.h>
+#include <Core/Log.h>
 #include <Core/Config.h>
 #include <math.h>
-namespace ssl{
+#include <Game/Game.h>
+
+namespace Phoenix{
     Vision* Vision::s_Instance = nullptr;
     Vision::Vision(){
         s_Instance = this;
@@ -44,9 +46,10 @@ namespace ssl{
 
     void Vision::ProcessRobots(){
         int yellow_robots = ExtractYellowTeam();
-        PHX_CORE_WARN("---------------------------------------");
         for (unsigned int i = 0 ; i <yellow_robots ; i++){
-            PHX_CORE_TRACE("{0}:\t position:[{1},\t {2}\t], orientation:\t{3}", robot[i].robot_id(), round(robot[i].x()), round(robot[i].y()), robot[i].orientation());
+            if (robot[i].robot_id() == Config::s_GameConfig.ourGK) {
+                Game::ourGK->VisionUpdate(Eigen::Vector2f(robot[i].x(), robot[i].y()), robot[i].orientation());
+            }
         }
     }
     int Vision::ExtractYellowTeam(){
