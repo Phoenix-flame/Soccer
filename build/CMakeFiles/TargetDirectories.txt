@@ -1,3 +1,0 @@
-/home/alireza/Programming/C++/Soccer/build/CMakeFiles/rebuild_cache.dir
-/home/alireza/Programming/C++/Soccer/build/CMakeFiles/edit_cache.dir
-/home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir
