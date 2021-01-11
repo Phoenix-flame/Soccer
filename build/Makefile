@@ -123,6 +123,60 @@ Soccer/fast:
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/build
 .PHONY : Soccer/fast
 
+ImmortalsProtocols.pb.o: ImmortalsProtocols.pb.cc.o
+
+.PHONY : ImmortalsProtocols.pb.o
+
+# target to build an object file
+ImmortalsProtocols.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o
+.PHONY : ImmortalsProtocols.pb.cc.o
+
+ImmortalsProtocols.pb.i: ImmortalsProtocols.pb.cc.i
+
+.PHONY : ImmortalsProtocols.pb.i
+
+# target to preprocess a source file
+ImmortalsProtocols.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.i
+.PHONY : ImmortalsProtocols.pb.cc.i
+
+ImmortalsProtocols.pb.s: ImmortalsProtocols.pb.cc.s
+
+.PHONY : ImmortalsProtocols.pb.s
+
+# target to generate assembly for a file
+ImmortalsProtocols.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.s
+.PHONY : ImmortalsProtocols.pb.cc.s
+
+aidebug.pb.o: aidebug.pb.cc.o
+
+.PHONY : aidebug.pb.o
+
+# target to build an object file
+aidebug.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/aidebug.pb.cc.o
+.PHONY : aidebug.pb.cc.o
+
+aidebug.pb.i: aidebug.pb.cc.i
+
+.PHONY : aidebug.pb.i
+
+# target to preprocess a source file
+aidebug.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/aidebug.pb.cc.i
+.PHONY : aidebug.pb.cc.i
+
+aidebug.pb.s: aidebug.pb.cc.s
+
+.PHONY : aidebug.pb.s
+
+# target to generate assembly for a file
+aidebug.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/aidebug.pb.cc.s
+.PHONY : aidebug.pb.cc.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,6 +203,141 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+messages_blob.pb.o: messages_blob.pb.cc.o
+
+.PHONY : messages_blob.pb.o
+
+# target to build an object file
+messages_blob.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_blob.pb.cc.o
+.PHONY : messages_blob.pb.cc.o
+
+messages_blob.pb.i: messages_blob.pb.cc.i
+
+.PHONY : messages_blob.pb.i
+
+# target to preprocess a source file
+messages_blob.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_blob.pb.cc.i
+.PHONY : messages_blob.pb.cc.i
+
+messages_blob.pb.s: messages_blob.pb.cc.s
+
+.PHONY : messages_blob.pb.s
+
+# target to generate assembly for a file
+messages_blob.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_blob.pb.cc.s
+.PHONY : messages_blob.pb.cc.s
+
+messages_robocup_ssl_detection.pb.o: messages_robocup_ssl_detection.pb.cc.o
+
+.PHONY : messages_robocup_ssl_detection.pb.o
+
+# target to build an object file
+messages_robocup_ssl_detection.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o
+.PHONY : messages_robocup_ssl_detection.pb.cc.o
+
+messages_robocup_ssl_detection.pb.i: messages_robocup_ssl_detection.pb.cc.i
+
+.PHONY : messages_robocup_ssl_detection.pb.i
+
+# target to preprocess a source file
+messages_robocup_ssl_detection.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.i
+.PHONY : messages_robocup_ssl_detection.pb.cc.i
+
+messages_robocup_ssl_detection.pb.s: messages_robocup_ssl_detection.pb.cc.s
+
+.PHONY : messages_robocup_ssl_detection.pb.s
+
+# target to generate assembly for a file
+messages_robocup_ssl_detection.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.s
+.PHONY : messages_robocup_ssl_detection.pb.cc.s
+
+messages_robocup_ssl_geometry.pb.o: messages_robocup_ssl_geometry.pb.cc.o
+
+.PHONY : messages_robocup_ssl_geometry.pb.o
+
+# target to build an object file
+messages_robocup_ssl_geometry.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o
+.PHONY : messages_robocup_ssl_geometry.pb.cc.o
+
+messages_robocup_ssl_geometry.pb.i: messages_robocup_ssl_geometry.pb.cc.i
+
+.PHONY : messages_robocup_ssl_geometry.pb.i
+
+# target to preprocess a source file
+messages_robocup_ssl_geometry.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.i
+.PHONY : messages_robocup_ssl_geometry.pb.cc.i
+
+messages_robocup_ssl_geometry.pb.s: messages_robocup_ssl_geometry.pb.cc.s
+
+.PHONY : messages_robocup_ssl_geometry.pb.s
+
+# target to generate assembly for a file
+messages_robocup_ssl_geometry.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.s
+.PHONY : messages_robocup_ssl_geometry.pb.cc.s
+
+messages_robocup_ssl_wrapper.pb.o: messages_robocup_ssl_wrapper.pb.cc.o
+
+.PHONY : messages_robocup_ssl_wrapper.pb.o
+
+# target to build an object file
+messages_robocup_ssl_wrapper.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o
+.PHONY : messages_robocup_ssl_wrapper.pb.cc.o
+
+messages_robocup_ssl_wrapper.pb.i: messages_robocup_ssl_wrapper.pb.cc.i
+
+.PHONY : messages_robocup_ssl_wrapper.pb.i
+
+# target to preprocess a source file
+messages_robocup_ssl_wrapper.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.i
+.PHONY : messages_robocup_ssl_wrapper.pb.cc.i
+
+messages_robocup_ssl_wrapper.pb.s: messages_robocup_ssl_wrapper.pb.cc.s
+
+.PHONY : messages_robocup_ssl_wrapper.pb.s
+
+# target to generate assembly for a file
+messages_robocup_ssl_wrapper.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.s
+.PHONY : messages_robocup_ssl_wrapper.pb.cc.s
+
+referee.pb.o: referee.pb.cc.o
+
+.PHONY : referee.pb.o
+
+# target to build an object file
+referee.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/referee.pb.cc.o
+.PHONY : referee.pb.cc.o
+
+referee.pb.i: referee.pb.cc.i
+
+.PHONY : referee.pb.i
+
+# target to preprocess a source file
+referee.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/referee.pb.cc.i
+.PHONY : referee.pb.cc.i
+
+referee.pb.s: referee.pb.cc.s
+
+.PHONY : referee.pb.s
+
+# target to generate assembly for a file
+referee.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/referee.pb.cc.s
+.PHONY : referee.pb.cc.s
 
 src/Core/Config.o: src/Core/Config.cpp.o
 
@@ -258,6 +447,33 @@ src/Vision/Vision.cpp.s:
 	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.s
 .PHONY : src/Vision/Vision.cpp.s
 
+strategy.pb.o: strategy.pb.cc.o
+
+.PHONY : strategy.pb.o
+
+# target to build an object file
+strategy.pb.cc.o:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/strategy.pb.cc.o
+.PHONY : strategy.pb.cc.o
+
+strategy.pb.i: strategy.pb.cc.i
+
+.PHONY : strategy.pb.i
+
+# target to preprocess a source file
+strategy.pb.cc.i:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/strategy.pb.cc.i
+.PHONY : strategy.pb.cc.i
+
+strategy.pb.s: strategy.pb.cc.s
+
+.PHONY : strategy.pb.s
+
+# target to generate assembly for a file
+strategy.pb.cc.s:
+	$(MAKE) -f CMakeFiles/Soccer.dir/build.make CMakeFiles/Soccer.dir/strategy.pb.cc.s
+.PHONY : strategy.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,9 +483,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Soccer"
+	@echo "... ImmortalsProtocols.pb.o"
+	@echo "... ImmortalsProtocols.pb.i"
+	@echo "... ImmortalsProtocols.pb.s"
+	@echo "... aidebug.pb.o"
+	@echo "... aidebug.pb.i"
+	@echo "... aidebug.pb.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... messages_blob.pb.o"
+	@echo "... messages_blob.pb.i"
+	@echo "... messages_blob.pb.s"
+	@echo "... messages_robocup_ssl_detection.pb.o"
+	@echo "... messages_robocup_ssl_detection.pb.i"
+	@echo "... messages_robocup_ssl_detection.pb.s"
+	@echo "... messages_robocup_ssl_geometry.pb.o"
+	@echo "... messages_robocup_ssl_geometry.pb.i"
+	@echo "... messages_robocup_ssl_geometry.pb.s"
+	@echo "... messages_robocup_ssl_wrapper.pb.o"
+	@echo "... messages_robocup_ssl_wrapper.pb.i"
+	@echo "... messages_robocup_ssl_wrapper.pb.s"
+	@echo "... referee.pb.o"
+	@echo "... referee.pb.i"
+	@echo "... referee.pb.s"
 	@echo "... src/Core/Config.o"
 	@echo "... src/Core/Config.i"
 	@echo "... src/Core/Config.s"
@@ -282,6 +519,9 @@ help:
 	@echo "... src/Vision/Vision.o"
 	@echo "... src/Vision/Vision.i"
 	@echo "... src/Vision/Vision.s"
+	@echo "... strategy.pb.o"
+	@echo "... strategy.pb.i"
+	@echo "... strategy.pb.s"
 .PHONY : help
 
 

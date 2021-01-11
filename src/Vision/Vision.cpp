@@ -1,6 +1,7 @@
 #include <Vision/Vision.h>
 #include <Core/Log.h>
 #include <Core/Config.h>
+#include <math.h>
 namespace Phoenix{
     Vision* Vision::s_Instance = nullptr;
     Vision::Vision(){
@@ -27,12 +28,40 @@ namespace Phoenix{
         if (!m_Connected) throw std::runtime_error("vision error");
 
         try{
-            int incoming_size = m_Sock->recv(incoming_buffer , MAX_INCOMING_PACKET_SIZE);
-            PHX_CORE_TRACE("PACKET SIZE: {0}", incoming_size);
-            // packet.ParseFromArray(incoming_buffer,incoming_size);
+            int incoming_size = m_Sock->recv(incoming_buffer, MAX_INCOMING_PACKET_SIZE);
+            packet.ParseFromArray(incoming_buffer, incoming_size);
         }
         catch(std::exception const& e){
             throw std::runtime_error("vision error");
         }
+        if (packet.has_detection()){
+            frame[packet.detection().camera_id()] = packet.detection();
+            packet_recieved[packet.detection().camera_id ()] = true;
+        }
+        ProcessRobots();
+    }
+
+
+    void Vision::ProcessRobots(){
+        int yellow_robots = ExtractYellowTeam();
+        PHX_CORE_WARN("---------------------------------------");
+        for (unsigned int i = 0 ; i <yellow_robots ; i++){
+            PHX_CORE_TRACE("{0}:\t position:[{1},\t {2}\t], orientation:\t{3}", robot[i].robot_id(), round(robot[i].x()), round(robot[i].y()), robot[i].orientation());
+        }
+    }
+    int Vision::ExtractYellowTeam(){
+        int ans = 0;
+        for (int i = 0; i < CAM_COUNT; i++){
+            if ( true ){
+                for ( int j = 0 ; j < min(MAX_ROBOTS, frame[i].robots_yellow_size()) ; j ++ ){
+                    robot[ans] = frame[i].robots_yellow(j);
+                    ans++;
+                }
+            }
+        }
+        return ans;
+    }
+    int Vision::ExtractBlueTeam(){
+        return 0;
     }
 }

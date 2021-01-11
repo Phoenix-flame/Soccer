@@ -57,9 +57,73 @@ include CMakeFiles/Soccer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Soccer.dir/flags.make
 
+ImmortalsProtocols.pb.h: ../protobuf/ImmortalsProtocols.proto
+ImmortalsProtocols.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/ImmortalsProtocols.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/ImmortalsProtocols.proto
+
+ImmortalsProtocols.pb.cc: ImmortalsProtocols.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate ImmortalsProtocols.pb.cc
+
+aidebug.pb.h: ../protobuf/aidebug.proto
+aidebug.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/aidebug.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/aidebug.proto
+
+aidebug.pb.cc: aidebug.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate aidebug.pb.cc
+
+messages_blob.pb.h: ../protobuf/messages_blob.proto
+messages_blob.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/messages_blob.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/messages_blob.proto
+
+messages_blob.pb.cc: messages_blob.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate messages_blob.pb.cc
+
+messages_robocup_ssl_detection.pb.h: ../protobuf/messages_robocup_ssl_detection.proto
+messages_robocup_ssl_detection.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/messages_robocup_ssl_detection.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/messages_robocup_ssl_detection.proto
+
+messages_robocup_ssl_detection.pb.cc: messages_robocup_ssl_detection.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate messages_robocup_ssl_detection.pb.cc
+
+messages_robocup_ssl_geometry.pb.h: ../protobuf/messages_robocup_ssl_geometry.proto
+messages_robocup_ssl_geometry.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/messages_robocup_ssl_geometry.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/messages_robocup_ssl_geometry.proto
+
+messages_robocup_ssl_geometry.pb.cc: messages_robocup_ssl_geometry.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate messages_robocup_ssl_geometry.pb.cc
+
+messages_robocup_ssl_wrapper.pb.h: ../protobuf/messages_robocup_ssl_wrapper.proto
+messages_robocup_ssl_wrapper.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/messages_robocup_ssl_wrapper.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/messages_robocup_ssl_wrapper.proto
+
+messages_robocup_ssl_wrapper.pb.cc: messages_robocup_ssl_wrapper.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate messages_robocup_ssl_wrapper.pb.cc
+
+referee.pb.h: ../protobuf/referee.proto
+referee.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/referee.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/referee.proto
+
+referee.pb.cc: referee.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate referee.pb.cc
+
+strategy.pb.h: ../protobuf/strategy.proto
+strategy.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running cpp protocol buffer compiler on /home/alireza/Programming/C++/Soccer/protobuf/strategy.proto"
+	/usr/bin/protoc --cpp_out /home/alireza/Programming/C++/Soccer/build -I /home/alireza/Programming/C++/Soccer/protobuf /home/alireza/Programming/C++/Soccer/protobuf/strategy.proto
+
+strategy.pb.cc: strategy.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate strategy.pb.cc
+
 CMakeFiles/Soccer.dir/main.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Soccer.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Soccer.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/main.cpp.o -c /home/alireza/Programming/C++/Soccer/main.cpp
 
 CMakeFiles/Soccer.dir/main.cpp.i: cmake_force
@@ -72,7 +136,7 @@ CMakeFiles/Soccer.dir/main.cpp.s: cmake_force
 
 CMakeFiles/Soccer.dir/src/Core/Config.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Core/Config.cpp.o: ../src/Core/Config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Config.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Core/Config.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Core/Config.cpp
 
 CMakeFiles/Soccer.dir/src/Core/Config.cpp.i: cmake_force
@@ -85,7 +149,7 @@ CMakeFiles/Soccer.dir/src/Core/Config.cpp.s: cmake_force
 
 CMakeFiles/Soccer.dir/src/Core/Log.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Core/Log.cpp.o: ../src/Core/Log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Soccer.dir/src/Core/Log.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Core/Log.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Core/Log.cpp
 
 CMakeFiles/Soccer.dir/src/Core/Log.cpp.i: cmake_force
@@ -98,7 +162,7 @@ CMakeFiles/Soccer.dir/src/Core/Log.cpp.s: cmake_force
 
 CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o: ../src/Network/PracticalSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Network/PracticalSocket.cpp
 
 CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.i: cmake_force
@@ -111,7 +175,7 @@ CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.s: cmake_force
 
 CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o: CMakeFiles/Soccer.dir/flags.make
 CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o: ../src/Vision/Vision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o -c /home/alireza/Programming/C++/Soccer/src/Vision/Vision.cpp
 
 CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.i: cmake_force
@@ -122,13 +186,125 @@ CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/src/Vision/Vision.cpp -o CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.s
 
+CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o: ImmortalsProtocols.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/ImmortalsProtocols.pb.cc
+
+CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/ImmortalsProtocols.pb.cc > CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.i
+
+CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/ImmortalsProtocols.pb.cc -o CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.s
+
+CMakeFiles/Soccer.dir/aidebug.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/aidebug.pb.cc.o: aidebug.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Soccer.dir/aidebug.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/aidebug.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/aidebug.pb.cc
+
+CMakeFiles/Soccer.dir/aidebug.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/aidebug.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/aidebug.pb.cc > CMakeFiles/Soccer.dir/aidebug.pb.cc.i
+
+CMakeFiles/Soccer.dir/aidebug.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/aidebug.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/aidebug.pb.cc -o CMakeFiles/Soccer.dir/aidebug.pb.cc.s
+
+CMakeFiles/Soccer.dir/messages_blob.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/messages_blob.pb.cc.o: messages_blob.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Soccer.dir/messages_blob.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/messages_blob.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/messages_blob.pb.cc
+
+CMakeFiles/Soccer.dir/messages_blob.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/messages_blob.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/messages_blob.pb.cc > CMakeFiles/Soccer.dir/messages_blob.pb.cc.i
+
+CMakeFiles/Soccer.dir/messages_blob.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/messages_blob.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/messages_blob.pb.cc -o CMakeFiles/Soccer.dir/messages_blob.pb.cc.s
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o: messages_robocup_ssl_detection.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_detection.pb.cc
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_detection.pb.cc > CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.i
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_detection.pb.cc -o CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.s
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o: messages_robocup_ssl_geometry.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_geometry.pb.cc
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_geometry.pb.cc > CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.i
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_geometry.pb.cc -o CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.s
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o: messages_robocup_ssl_wrapper.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_wrapper.pb.cc
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_wrapper.pb.cc > CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.i
+
+CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/messages_robocup_ssl_wrapper.pb.cc -o CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.s
+
+CMakeFiles/Soccer.dir/referee.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/referee.pb.cc.o: referee.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Soccer.dir/referee.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/referee.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/referee.pb.cc
+
+CMakeFiles/Soccer.dir/referee.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/referee.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/referee.pb.cc > CMakeFiles/Soccer.dir/referee.pb.cc.i
+
+CMakeFiles/Soccer.dir/referee.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/referee.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/referee.pb.cc -o CMakeFiles/Soccer.dir/referee.pb.cc.s
+
+CMakeFiles/Soccer.dir/strategy.pb.cc.o: CMakeFiles/Soccer.dir/flags.make
+CMakeFiles/Soccer.dir/strategy.pb.cc.o: strategy.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Soccer.dir/strategy.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Soccer.dir/strategy.pb.cc.o -c /home/alireza/Programming/C++/Soccer/build/strategy.pb.cc
+
+CMakeFiles/Soccer.dir/strategy.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Soccer.dir/strategy.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alireza/Programming/C++/Soccer/build/strategy.pb.cc > CMakeFiles/Soccer.dir/strategy.pb.cc.i
+
+CMakeFiles/Soccer.dir/strategy.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Soccer.dir/strategy.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alireza/Programming/C++/Soccer/build/strategy.pb.cc -o CMakeFiles/Soccer.dir/strategy.pb.cc.s
+
 # Object files for target Soccer
 Soccer_OBJECTS = \
 "CMakeFiles/Soccer.dir/main.cpp.o" \
 "CMakeFiles/Soccer.dir/src/Core/Config.cpp.o" \
 "CMakeFiles/Soccer.dir/src/Core/Log.cpp.o" \
 "CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o" \
-"CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o"
+"CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o" \
+"CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o" \
+"CMakeFiles/Soccer.dir/aidebug.pb.cc.o" \
+"CMakeFiles/Soccer.dir/messages_blob.pb.cc.o" \
+"CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o" \
+"CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o" \
+"CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o" \
+"CMakeFiles/Soccer.dir/referee.pb.cc.o" \
+"CMakeFiles/Soccer.dir/strategy.pb.cc.o"
 
 # External object files for target Soccer
 Soccer_EXTERNAL_OBJECTS =
@@ -138,11 +314,20 @@ Soccer: CMakeFiles/Soccer.dir/src/Core/Config.cpp.o
 Soccer: CMakeFiles/Soccer.dir/src/Core/Log.cpp.o
 Soccer: CMakeFiles/Soccer.dir/src/Network/PracticalSocket.cpp.o
 Soccer: CMakeFiles/Soccer.dir/src/Vision/Vision.cpp.o
+Soccer: CMakeFiles/Soccer.dir/ImmortalsProtocols.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/aidebug.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/messages_blob.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/messages_robocup_ssl_detection.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/messages_robocup_ssl_geometry.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/messages_robocup_ssl_wrapper.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/referee.pb.cc.o
+Soccer: CMakeFiles/Soccer.dir/strategy.pb.cc.o
 Soccer: CMakeFiles/Soccer.dir/build.make
 Soccer: /usr/lib/x86_64-linux-gnu/liblua5.1.so
 Soccer: /usr/lib/x86_64-linux-gnu/libm.so
+Soccer: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 Soccer: CMakeFiles/Soccer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Soccer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alireza/Programming/C++/Soccer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Soccer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Soccer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,7 +339,22 @@ CMakeFiles/Soccer.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/Soccer.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/Soccer.dir/clean
 
-CMakeFiles/Soccer.dir/depend:
+CMakeFiles/Soccer.dir/depend: ImmortalsProtocols.pb.h
+CMakeFiles/Soccer.dir/depend: ImmortalsProtocols.pb.cc
+CMakeFiles/Soccer.dir/depend: aidebug.pb.h
+CMakeFiles/Soccer.dir/depend: aidebug.pb.cc
+CMakeFiles/Soccer.dir/depend: messages_blob.pb.h
+CMakeFiles/Soccer.dir/depend: messages_blob.pb.cc
+CMakeFiles/Soccer.dir/depend: messages_robocup_ssl_detection.pb.h
+CMakeFiles/Soccer.dir/depend: messages_robocup_ssl_detection.pb.cc
+CMakeFiles/Soccer.dir/depend: messages_robocup_ssl_geometry.pb.h
+CMakeFiles/Soccer.dir/depend: messages_robocup_ssl_geometry.pb.cc
+CMakeFiles/Soccer.dir/depend: messages_robocup_ssl_wrapper.pb.h
+CMakeFiles/Soccer.dir/depend: messages_robocup_ssl_wrapper.pb.cc
+CMakeFiles/Soccer.dir/depend: referee.pb.h
+CMakeFiles/Soccer.dir/depend: referee.pb.cc
+CMakeFiles/Soccer.dir/depend: strategy.pb.h
+CMakeFiles/Soccer.dir/depend: strategy.pb.cc
 	cd /home/alireza/Programming/C++/Soccer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alireza/Programming/C++/Soccer /home/alireza/Programming/C++/Soccer /home/alireza/Programming/C++/Soccer/build /home/alireza/Programming/C++/Soccer/build /home/alireza/Programming/C++/Soccer/build/CMakeFiles/Soccer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Soccer.dir/depend
 
