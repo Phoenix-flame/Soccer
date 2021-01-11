@@ -21,18 +21,17 @@ namespace Phoenix{
             lua_pop(L,1);
         }
 
-
-        s_VisionConfig.ip = getValue<std::string>(L, "vision_ip");
-        s_VisionConfig.port = getValue<int>(L, "vision_port");
-        for(unsigned int i = 0 ; i < getValue<int>(L, "vision_num_cam"); i++){
-            s_VisionConfig.enabled_cam.push_back(getValue<bool>(L, "vision_camera" + std::to_string(i + 1)));
+        s_VisionConfig.ip = getString("vision_ip");
+        s_VisionConfig.port = getInt("vision_port");
+        for(unsigned int i = 0 ; i < getInt("vision_num_cam"); i++){
+            s_VisionConfig.enabled_cam.push_back(getBool("vision_camera" + std::to_string(i + 1)));
         }
 
-        s_GameConfig.numOurRobots = getValue<int>(L, "game_numOurRobots");
-        s_GameConfig.numOppRobots = getValue<int>(L, "game_numOppRobots");
-        s_GameConfig.ourGK = getValue<int>(L, "game_ourGK");
-        s_GameConfig.oppGK = getValue<int>(L, "game_oppGK");
-        s_GameConfig.ourColor = getValue<bool>(L, "game_ourcolor");
+        s_GameConfig.numOurRobots = getInt("game_numOurRobots");
+        s_GameConfig.numOppRobots = getInt("game_numOppRobots");
+        s_GameConfig.ourGK = getInt("game_ourGK");
+        s_GameConfig.oppGK = getInt("game_oppGK");
+        s_GameConfig.ourColor = getBool("game_ourcolor");
         
         lua_close(L);
 

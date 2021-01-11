@@ -2,9 +2,13 @@
 #include <lua5.1/lua.hpp>
 #include <string>
 #include <vector>
+
+#define getString(name) getValue<std::string>(L, name)
+#define getInt(name) getValue<int>(L, name)
+#define getFloat(name) getValue<float>(L, name)
+#define getBool(name) getValue<bool>(L, name)
+
 namespace Phoenix{
-
-
     template<typename T>
     T getValue(lua_State *L, std::string name){
         lua_getglobal(L, name.c_str());
@@ -23,8 +27,6 @@ namespace Phoenix{
             lua_pop(L, 1);
             return val;
         }
-
-       
     }
 
     struct VisionConfig{
