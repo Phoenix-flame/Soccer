@@ -25,7 +25,7 @@ namespace Phoenix{
         operator bool() { return m_Connected; }
 
     private:
-        void ProcessRobots();
+        void ProcessRobots(double dt);
         int ExtractYellowTeam();
         int ExtractBlueTeam();
 

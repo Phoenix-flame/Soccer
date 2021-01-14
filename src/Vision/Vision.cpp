@@ -43,21 +43,19 @@ namespace Phoenix{
             packet_recieved[packet.detection().camera_id ()] = true;
             dt = packet.detection().t_capture() - m_Timestamp[packet.detection().camera_id()];
             m_Timestamp[packet.detection().camera_id()] = packet.detection().t_capture();
-            PHX_CORE_TRACE("Camera:{0} -> {1} s", packet.detection().camera_id(), dt);
+            // PHX_CORE_TRACE("Camera:{0} -> {1} s", packet.detection().camera_id(), dt);
         }
-        ProcessRobots();
-        for (auto r:m_YellowRobots){
-            // Kalman Filter
-        }
-        for (auto r:m_BlueRobots){
-            // Kalman Filter
-        }
+        ProcessRobots(dt);
+
     }
 
 
-    void Vision::ProcessRobots(){
+    void Vision::ProcessRobots(double dt){
         int yellow_robots = ExtractYellowTeam();
         int blue_robots = ExtractBlueTeam();
+        Eigen::VectorXd y(2);
+        y << (int)m_YellowRobots[3].x(), (int)m_YellowRobots[3].y();
+        Game::ourGK->UpdateKalman(dt, y);
         Game::ourGK->VisionUpdate(Eigen::Vector2f(m_YellowRobots[3].x(), m_YellowRobots[3].y()), m_YellowRobots[3].orientation());
     }
     int Vision::ExtractYellowTeam(){
