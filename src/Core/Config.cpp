@@ -3,6 +3,8 @@
 namespace Phoenix{
     VisionConfig Config::s_VisionConfig;
     GameConfig Config::s_GameConfig;
+    DebuggerConfig Config::s_DebuggerConfig;
+
     Config::Config(){
         lua_State *L;
         L = luaL_newstate();
@@ -26,6 +28,9 @@ namespace Phoenix{
         for(unsigned int i = 0 ; i < getInt("vision_num_cam"); i++){
             s_VisionConfig.enabled_cam.push_back(getBool("vision_camera" + std::to_string(i + 1)));
         }
+
+        s_DebuggerConfig.ip = getString("debugger_ip");
+        s_DebuggerConfig.port = getInt("debugger_port");
 
         s_GameConfig.numOurRobots = getInt("game_numOurRobots");
         s_GameConfig.numOppRobots = getInt("game_numOppRobots");

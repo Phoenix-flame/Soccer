@@ -7,6 +7,10 @@ vision_camera2 = true;
 vision_camera3 = true;
 vision_camera4 = true;
 
+-- [Debugger Config]
+debugger_ip = "224.5.23.16";
+debugger_port = 10007;
+
 -- [Game Config]
 game_numOurRobots = 1;
 game_numOppRobots = 1;

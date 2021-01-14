@@ -6,10 +6,10 @@
 namespace Phoenix{
     class Debugger{
     public:
-        Debugger(){
-            s_Sock = CreateRef<UDPSocket>(10007);
-            s_Sock->joinGroup("224.5.23.16");
-        }
+        Debugger();
+        Debugger(const Debugger& other) = delete;
+        Debugger& operator=(const Debugger& other) = default;
+        
         static void AddFloat(std::string name, float value);
         static void Flush();
     private:

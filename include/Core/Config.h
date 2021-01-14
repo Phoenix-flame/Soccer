@@ -8,6 +8,7 @@
 #define getFloat(name) getValue<float>(L, name)
 #define getBool(name) getValue<bool>(L, name)
 
+
 namespace Phoenix{
     template<typename T>
     T getValue(lua_State *L, std::string name){
@@ -41,6 +42,11 @@ namespace Phoenix{
         int oppGK;
         bool ourColor;
     };
+    
+    struct DebuggerConfig{
+        std::string ip;
+        int port;
+    };
 
 
     class Config{
@@ -50,5 +56,6 @@ namespace Phoenix{
 
         static VisionConfig s_VisionConfig;
         static GameConfig s_GameConfig;
+        static DebuggerConfig s_DebuggerConfig;
     };
 }

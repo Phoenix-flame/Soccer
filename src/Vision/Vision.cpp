@@ -9,7 +9,7 @@ namespace Phoenix{
     Vision::Vision(){
         s_Instance = this;
         m_Sock = CreateRef<UDPSocket>(Config::s_VisionConfig.port);
-        PHX_CORE_TRACE("IP: {0}, Port: {1}", Config::s_VisionConfig.ip, Config::s_VisionConfig.port);
+        PHX_CORE_TRACE("[Vision]\t IP: {0}, Port: {1}", Config::s_VisionConfig.ip, Config::s_VisionConfig.port);
         Connect();
     }
     Vision::~Vision(){
