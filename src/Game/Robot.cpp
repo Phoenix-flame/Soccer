@@ -49,6 +49,8 @@ namespace Phoenix{
         m_Filter->update(measurment, dt, A);
         Eigen::MatrixXd convert(2, 4);
         convert << 0, 0, -1/230.0, 0, 0, 0, 0, -1/230.0;
-        std::cout << convert*m_Filter->state() << std::endl;
+        Eigen::VectorXd velocity = convert*m_Filter->state(); 
+        Debugger::AddFloat("Velocity x", velocity.x());
+        Debugger::AddFloat("Velocity y", velocity.y());
     }
 }
