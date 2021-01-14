@@ -29,8 +29,8 @@ namespace Phoenix{
                 0, 5;
         P <<  1,    .0,  .0, .0, 
              .0,     1,  .0, .0, 
-             .0,    .0,   10, .0, 
-             .0,    .0,  .0,  10;
+             .0,    .0,   100, .0, 
+             .0,    .0,  .0,  100;
 
         m_Filter = CreateRef<KalmanFilter>(dt, A, C, Q, R, P);
         m_Filter->init();
@@ -47,6 +47,8 @@ namespace Phoenix{
              0, 0,  1,  0, 
              0, 0,  0,  1;
         m_Filter->update(measurment, dt, A);
-        std::cout << m_Filter->state() << std::endl;
+        Eigen::MatrixXd convert(2, 4);
+        convert << 0, 0, -1/230.0, 0, 0, 0, 0, -1/230.0;
+        std::cout << convert*m_Filter->state() << std::endl;
     }
 }
