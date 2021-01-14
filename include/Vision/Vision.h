@@ -40,6 +40,7 @@ namespace Phoenix{
         std::map<int, SSL_DetectionRobot> m_YellowRobots;
         std::map<int, SSL_DetectionRobot> m_BlueRobots;
         bool packet_recieved[CAM_COUNT];
+        std::map<int, double> m_Timestamp;
         static Vision* s_Instance;
     };
 }

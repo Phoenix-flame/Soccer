@@ -28,19 +28,30 @@ namespace Phoenix{
 
     void Vision::ReceivePacket(){
         if (!m_Connected) throw std::runtime_error("vision error");
-
+        double dt;
         try{
             int incoming_size = m_Sock->recv(incoming_buffer, MAX_INCOMING_PACKET_SIZE);
             packet.ParseFromArray(incoming_buffer, incoming_size);
+            
         }
         catch(std::exception const& e){
             throw std::runtime_error("vision error");
         }
+        
         if (packet.has_detection()){
             frame[packet.detection().camera_id()] = packet.detection();
             packet_recieved[packet.detection().camera_id ()] = true;
+            dt = packet.detection().t_capture() - m_Timestamp[packet.detection().camera_id()];
+            m_Timestamp[packet.detection().camera_id()] = packet.detection().t_capture();
+            PHX_CORE_TRACE("Camera:{0} -> {1} s", packet.detection().camera_id(), dt);
         }
         ProcessRobots();
+        for (auto r:m_YellowRobots){
+            // Kalman Filter
+        }
+        for (auto r:m_BlueRobots){
+            // Kalman Filter
+        }
     }
 
 
