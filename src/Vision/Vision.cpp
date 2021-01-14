@@ -62,7 +62,6 @@ namespace Phoenix{
         return ans;
     }
     int Vision::ExtractBlueTeam(){
-        SSL_DetectionRobot robot[MAX_ROBOTS*CAM_COUNT];
         int ans = 0;
         for (int i = 0; i < CAM_COUNT; i++){
             if (Config::s_VisionConfig.enabled_cam[i] ){

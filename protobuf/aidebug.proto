@@ -84,6 +84,13 @@ message Function_Data
   required Debug_Draw draw_data    = 7;
 }
 
+message VariableData
+{
+  required string	  name         = 1;
+  required float      value        = 2;
+}
+
+
 message AI_Debug
 {
   required uint32         frame_id = 1;
@@ -92,4 +99,5 @@ message AI_Debug
   repeated Debug_Line   line   = 4;
   repeated Debug_Rect   rect   = 5;
   repeated Debug_Circle circle = 6;
+  repeated VariableData variables = 7;
 }
