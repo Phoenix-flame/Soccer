@@ -1,12 +1,10 @@
 #include <Network/GrSim.h>
 #include <Core/Log.h>
-#include <../build/grSim_Packet.pb.h>
+
 namespace Phoenix{
     GrSim::GrSim(){
-        PHX_CORE_TRACE("HERE");
         m_Sock = CreateRef<UDPSocket>();
-        // m_Sock->joinGroup("127.0.0.1");
-        PHX_CORE_TRACE("HERE");
+        m_CommandPacket = CreateRef<grSim_Packet>();
     }
     
 
@@ -49,6 +47,37 @@ namespace Phoenix{
         }catch(std::exception const& e){
             PHX_CORE_CRITICAL(e.what());
         }
+    }
+
+
+    void GrSim::SendCommand(const GrSimCommand& c){
+        m_CommandPacket->mutable_commands()->set_isteamyellow(true);
+        m_CommandPacket->mutable_commands()->set_timestamp(0.0);
+        grSim_Robot_Command* comm = m_CommandPacket->mutable_commands()->add_robot_commands();
+        comm->set_id(c.id);
+        comm->set_velangular(c.w_vel);
+        comm->set_velnormal(c.y_vel);
+        comm->set_veltangent(c.x_vel);
+        comm->set_kickspeedx(c.kick);
+        comm->set_kickspeedz(c.chip);
+        comm->set_spinner(0.0);
+        comm->set_wheel1(0.0);
+        comm->set_wheel2(0.0);
+        comm->set_wheel3(0.0);
+        comm->set_wheel4(0.0);
+        comm->set_wheelsspeed(0.0);
+    }
+
+    void GrSim::FlushCommands(){
+        
+        std::string content;
+        m_CommandPacket->SerializeToArray(s_OutgoingArray, m_CommandPacket->ByteSize());
+        try{
+            m_Sock->sendTo(s_OutgoingArray, m_CommandPacket->ByteSize(), "127.0.0.1", 20011);
+        }catch(std::exception const& e){
+            PHX_CORE_CRITICAL(e.what());
+        }
+        m_CommandPacket->Clear();
     }
 
 }

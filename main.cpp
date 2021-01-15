@@ -18,7 +18,12 @@ int main(){
     while(true){
         vision.ReceivePacket();
         Phoenix::Game::ourGK->Debug();
+
+        grsim.SendCommand({3, 0.0, 0.0, 0.0, 0.0, 0.0});
+
+
         Phoenix::Debugger::Flush();
+        grsim.FlushCommands();
     }
 
     return 0;
