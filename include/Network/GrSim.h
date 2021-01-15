@@ -24,6 +24,6 @@ namespace Phoenix{
     private:
         Ref<UDPSocket> m_Sock; 
         Ref<grSim_Packet> m_CommandPacket;
-        char s_OutgoingArray[1000];
+        char m_OutgoingArray[1000];
     };
 }

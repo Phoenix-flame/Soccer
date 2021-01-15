@@ -41,9 +41,9 @@ namespace Phoenix{
             r_pos->set_turnon(false);
         }
         std::string content;
-        packet.SerializeToArray(s_OutgoingArray, packet.ByteSize());
+        packet.SerializeToArray(m_OutgoingArray, packet.ByteSize());
         try{
-            m_Sock->sendTo(s_OutgoingArray, packet.ByteSize(), "127.0.0.1", 20011);
+            m_Sock->sendTo(m_OutgoingArray, packet.ByteSize(), "127.0.0.1", 20011);
         }catch(std::exception const& e){
             PHX_CORE_CRITICAL(e.what());
         }
@@ -71,9 +71,9 @@ namespace Phoenix{
     void GrSim::FlushCommands(){
         
         std::string content;
-        m_CommandPacket->SerializeToArray(s_OutgoingArray, m_CommandPacket->ByteSize());
+        m_CommandPacket->SerializeToArray(m_OutgoingArray, m_CommandPacket->ByteSize());
         try{
-            m_Sock->sendTo(s_OutgoingArray, m_CommandPacket->ByteSize(), "127.0.0.1", 20011);
+            m_Sock->sendTo(m_OutgoingArray, m_CommandPacket->ByteSize(), "127.0.0.1", 20011);
         }catch(std::exception const& e){
             PHX_CORE_CRITICAL(e.what());
         }
