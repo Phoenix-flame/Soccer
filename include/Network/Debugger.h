@@ -11,6 +11,7 @@ namespace Phoenix{
         Debugger& operator=(const Debugger& other) = default;
         
         static void AddFloat(std::string name, float value);
+        static void AddTimeProfile(std::string name, int value);
         static void Flush();
     private:
         static Ref<UDPSocket> s_Sock;

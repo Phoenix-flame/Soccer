@@ -19,6 +19,13 @@ namespace Phoenix{
         data->set_value(value);
     }
 
+    void Debugger::AddTimeProfile(std::string name, int value){
+        TimeProfileData *data = s_Packet.add_profiles();
+        data->set_name(name);
+        data->set_value(value);
+    }
+
+
     void Debugger::Flush(){
         s_Packet.set_frame_id(100);
         std::string content;

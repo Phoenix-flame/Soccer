@@ -2,7 +2,7 @@
 #include <chrono>
 #include <string>
 #include <Core/Log.h>
-
+#include <Network/Debugger.h>
 
 
 namespace Phoenix{
@@ -14,7 +14,9 @@ namespace Phoenix{
         }
         ~ScopeTimer(){
             auto end = std::chrono::high_resolution_clock::now();
-            PHX_CORE_WARN("{0}: {1} us", m_Name, std::chrono::duration_cast<std::chrono::microseconds>(end - m_Time).count());
+            int duration = std::chrono::duration_cast<std::chrono::microseconds>(end - m_Time).count();
+            // PHX_CORE_WARN("{0}: {1} us", m_Name, duration);
+            Debugger::AddTimeProfile(m_Name, duration);
         }
         ScopeTimer(const ScopeTimer&) = delete;
         ScopeTimer& operator=(const ScopeTimer&) = delete;
